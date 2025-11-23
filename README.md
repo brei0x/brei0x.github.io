@@ -1,7 +1,7 @@
 # brei0x.github.io
 
 A modern web application built
-with [Next.js 16](https://nextjs.org/), [React 19](https://react.dev/),
+with [Next.js](https://nextjs.org/), [React](https://react.dev/),
 and [Tailwind CSS](https://tailwindcss.com/).
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -32,7 +32,7 @@ accessible way, demonstrating my expertise with the Next.js ecosystem.
 - **Styling:** Tailwind CSS & PostCSS
 - **Icons:** Lucide React
 - **Linting:** ESLint
-- **Package Manager:** Yarn
+- **Package Manager:** Yarn 4
 
 ## 🚀 Getting Started
 
@@ -44,7 +44,7 @@ local machine.
 Ensure you have the following installed:
 
 - **Node.js** (Version 24 or higher recommended)
-- **Yarn** package manager
+- **Corepack** (included with Node.js) to manage the Yarn version
 
 ### Installation
 
@@ -54,17 +54,22 @@ Ensure you have the following installed:
    cd brei0x.github.io
    ```
 
-2. **Install dependencies**
+2. **Enabled Corepack**
+   ```bash
+   corepack enable
+   ```
+
+3. **Install dependencies**
    ```bash
    yarn install
    ```
 
-3. **Run the development server**
+4. **Run the development server**
    ```bash
    yarn dev
    ```
 
-4. **Open your browser**
+5. **Open your browser**
    Navigate to [https://localhost:3000](https://localhost:3000) to see the
    application.
 
