@@ -1,0 +1,49 @@
+"use client";
+
+import {useState} from "react";
+import {Menu, X} from "lucide-react";
+
+export default function MobileNav() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+
+  return (
+    <div className="lg:hidden">
+      {/* Menu Items - visible only when open */}
+      {isMobileMenuOpen && (
+        <nav className="fixed bottom-24 right-6 z-50 flex flex-col items-end gap-3">
+          {[
+            {href: "#about", label: "À propos"},
+            {href: "#experience", label: "Expérience"},
+            {href: "#skills", label: "Compétences"},
+            {href: "#contact", label: "Contact"},
+          ].map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="rounded-full bg-slate-800/90 border border-slate-700 px-6 py-3 text-sm font-bold uppercase tracking-widest text-slate-200 shadow-xl backdrop-blur transition hover:bg-teal-500 hover:text-slate-900"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+      )}
+
+      {/* The "Camembert" Toggle Button */}
+      <button
+        onClick={toggleMobileMenu}
+        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-teal-500 text-slate-900 shadow-lg shadow-teal-500/20 transition hover:bg-teal-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-slate-900"
+        aria-label="Menu de navigation mobile"
+        aria-expanded={isMobileMenuOpen}
+      >
+        {isMobileMenuOpen ? (
+          <X className="h-6 w-6"/>
+        ) : (
+          <Menu className="h-6 w-6"/>
+        )}
+      </button>
+    </div>
+  );
+}

@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+:root {
+  /* Converted to Hex: Slate 950 for background */
+  --background: #0f172a;
+  --foreground: #ffffff;
+}
+
+/* Theme Configuration (Tailwind v4 style) */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; /* Match body background */
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; /* Slate 700 */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; /* Slate 600 */
+}
