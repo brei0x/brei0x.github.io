@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {Github, Linkedin, Server, Code2, Database, Wrench, ShieldCheck, ArrowUpRight} from "lucide-react";
+import {Github, Linkedin, Server, Code2, Database, Wrench, ArrowUpRight} from "lucide-react";
 import MouseSpotlight from "@/components/MouseSpotlight";
 import MobileNav from "@/components/MobileNav";
 
@@ -11,15 +11,9 @@ export default function Home() {
         {/* Left Section: Sticky Header */}
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
           <div>
-            <h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">
-              Breith Barbot
-            </h1>
-            <h2 className="mt-3 text-lg font-medium tracking-tight text-teal-400 sm:text-xl">
-              CTO hands-on / Lead Full Stack / DevOps
-            </h2>
-            <p className="mt-4 max-w-xs leading-normal text-slate-400">
-              Fort de plus de 10 ans d'expérience hands-on, j'aligne développement et architecture cloud sur vos enjeux business.
-            </p>
+            <h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">Breith Barbot</h1>
+            <h2 className="mt-3 text-lg font-medium tracking-tight text-teal-400 sm:text-xl">CTO hands-on / Lead Full Stack / DevOps</h2>
+            <p className="mt-4 max-w-xs leading-normal text-slate-400">J'aligne développement et architecture cloud sur vos enjeux business.</p>
 
             {/* Quick Navigation */}
             <nav className="nav hidden lg:block" aria-label="Navigation rapide">
@@ -75,19 +69,16 @@ export default function Home() {
               <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">À propos</h2>
             </div>
             <div className="text-slate-400 space-y-4">
-              <p className="pb-10 leading-relaxed">
-                CTO hands-on et Lead Full Stack, j'allie développement web et culture DevOps à la gestion d'équipes techniques. Toujours à l'affût des innovations, je m'attache à aligner la technologie sur vos objectifs business pour bâtir des solutions efficaces et pérennes.
-              </p>
-              <p>
-                Mon approche repose sur une <strong className="font-medium text-slate-200">compréhension fine entre les enjeux stratégiques et les besoins techniques</strong>. Autodidacte et rigoureux, je gère l'intégralité des outils techniques d'une entreprise, de l'infrastructure Cloud au parc informatique.
-              </p>
+              <p className="pb-10 leading-relaxed"><strong className="font-medium text-slate-200">Fort de plus de 10 ans d'expérience hands-on</strong>, j'allie développement web et culture DevOps à la gestion d'équipes techniques. Toujours à l'affût des innovations, je m'attache à aligner la technologie sur vos objectifs business pour bâtir des solutions efficaces et pérennes.</p>
+              <p className="pb-10">Mon approche repose sur une <strong className="font-medium text-slate-200">compréhension fine entre les objectifs business et les besoins techniques</strong>. Autodidacte et rigoureux, je gère l'intégralité des outils techniques d'une entreprise, de l'infrastructure Cloud au parc informatique.</p>
               <div>
                 <h3 className="text-slate-200 font-semibold mb-2">Mes atouts clés :</h3>
-                <ul className="list-disc list-inside space-y-1">
-                  <li>Choix et validation techniques stratégiques</li>
-                  <li>Administration système, réseau et sécurité</li>
-                  <li>Veille technologique active (IA, DevOps, Vulnérabilités, ...)</li>
-                  <li>Sens de l'organisation et gestion de projet Agile</li>
+                <ul className="list-disc list-inside space-y-1 text-sm">
+                  <li>Compréhension des enjeux stratégiques</li>
+                  <li>Sens de l'organisation & Gestion Agile</li>
+                  <li>Gestion complète des outils techniques</li>
+                  <li>Veille technologique (IA, DevOps, Securité)</li>
+                  <li>Autodidacte & Vulnérabilités tech</li>
                 </ul>
               </div>
             </div>
@@ -119,7 +110,7 @@ export default function Home() {
                     </p>
                     <ul className="relative mt-2 flex flex-wrap" aria-label="Technologies utilisées">
                       <li className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">PHP / Symfony</div>
+                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Lead Full Stack</div>
                       </li>
                       <li className="mr-1.5 mt-2">
                         <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">App Mobile / Web</div>
@@ -153,9 +144,13 @@ export default function Home() {
                         </span>
                       </div>
                     </h3>
-                    <p className="relative mt-2 text-sm leading-normal text-slate-400">
-                      Développement d'une plateforme de vente en ligne. Validation technique, administration système et réseau pour assurer la robustesse de l'infrastructure e-commerce.
-                    </p>
+                    <div className="relative mt-2 text-sm leading-normal text-slate-400 space-y-2">
+                      <p>Développement d'une plate-forme de vente en ligne.</p>
+                      <ul className="list-disc list-inside space-y-1 ml-2">
+                        <li>Choix et validation technique</li>
+                        <li>Administration système et réseau</li>
+                      </ul>
+                    </div>
                     <ul className="relative mt-2 flex flex-wrap" aria-label="Technologies utilisées">
                       <li className="mr-1.5 mt-2">
                         <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">E-commerce</div>
@@ -186,18 +181,22 @@ export default function Home() {
                         </span>
                       </div>
                     </h3>
-                    <p className="relative mt-2 text-sm leading-normal text-slate-400">
-                      Développement d'applications et sites web, administration des serveurs et support technique informatique/réseau.
-                    </p>
+                    <div className="relative mt-2 text-sm leading-normal text-slate-400 space-y-2">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>Développement d'application/site web</li>
+                        <li>Administration des serveurs</li>
+                        <li>Support technique (informatique et réseau)</li>
+                      </ul>
+                    </div>
                     <ul className="relative mt-2 flex flex-wrap" aria-label="Technologies utilisées">
                       <li className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">PHP / Symfony</div>
+                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Full Stack</div>
                       </li>
                       <li className="mr-1.5 mt-2">
                         <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">DevOps</div>
                       </li>
                       <li className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Support</div>
+                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Support IT</div>
                       </li>
                     </ul>
                   </div>
@@ -221,10 +220,12 @@ export default function Home() {
                     </h3>
                     <div className="relative mt-2 text-sm leading-normal text-slate-400 space-y-3">
                       <div>
-                        <strong className="text-slate-200">Développeur web (stagiaire) - ADULLACT :</strong> Création et intégration de charte graphique pour tableaux de bord de gestion.
+                        <strong className="text-slate-200">Développeur web (stagiaire) - ADULLACT</strong>
+                        <p>Création et intégration d'une charte graphique pour l'habillage des tableaux de bord d'un logiciel de gestion de délibérations.</p>
                       </div>
                       <div>
-                        <strong className="text-slate-200">Graphiste (stagiaire) - BeeCee Agency :</strong> Conception de logos, maquettes web, supports publicitaires et vidéos promotionnelles.
+                        <strong className="text-slate-200">Graphiste (stagiaire) - BeeCee Agency</strong>
+                        <p>Conception de logos, maquettes web, supports publicitaires (bannières, enseignes), cartes de visite, ainsi que production de vidéos promotionnelles.</p>
                       </div>
                     </div>
                   </div>
@@ -249,13 +250,13 @@ export default function Home() {
               <div className="rounded-md border border-slate-800 bg-slate-900/50 p-6 transition hover:border-teal-500/50 hover:bg-slate-800/50">
                 <div className="flex items-center gap-3 mb-4">
                   <Code2 className="h-6 w-6 text-teal-400"/>
-                  <h3 className="font-semibold text-slate-200">Langages & Frameworks</h3>
+                  <h3 className="font-semibold text-slate-200">Stack Backend & Web</h3>
                 </div>
                 <ul className="list-disc list-inside text-sm text-slate-400 space-y-2">
                   <li>PHP (Symfony / API Platform)</li>
-                  <li>JavaScript (Vue.js / Next.js)</li>
-                  <li>Python & API REST</li>
-                  <li>HTML/CSS (Tailwind CSS, Bootstrap)</li>
+                  <li>JavaScript / TypeScript (Vue.js, Next.js)</li>
+                  <li>Python, HTML, CSS (Tailwind CSS, Bootstrap)</li>
+                  <li>API REST & FrankenPHP</li>
                 </ul>
               </div>
 
@@ -263,13 +264,13 @@ export default function Home() {
               <div className="rounded-md border border-slate-800 bg-slate-900/50 p-6 transition hover:border-teal-500/50 hover:bg-slate-800/50">
                 <div className="flex items-center gap-3 mb-4">
                   <Server className="h-6 w-6 text-teal-400"/>
-                  <h3 className="font-semibold text-slate-200">Cloud & Infra (IaaS/PaaS)</h3>
+                  <h3 className="font-semibold text-slate-200">Infrastructure & Cloud</h3>
                 </div>
                 <ul className="list-disc list-inside text-sm text-slate-400 space-y-2">
-                  <li>GCP (Compute, SQL, Run, BigQuery...)</li>
-                  <li>AWS (EC2, S3, RDS, Amplify...)</li>
-                  <li>Docker / Terraform</li>
-                  <li>Vercel / Cloudflare / OVH</li>
+                  <li>AWS & GCP (Compute, SQL, Storage...)</li>
+                  <li>Docker, Terraform, Ansible</li>
+                  <li>Linux (Debian/Ubuntu), Nginx, SSH</li>
+                  <li>Cloudflare, OVH, Gandi, Vercel, Hostinger</li>
                 </ul>
               </div>
 
@@ -277,13 +278,13 @@ export default function Home() {
               <div className="rounded-md border border-slate-800 bg-slate-900/50 p-6 transition hover:border-teal-500/50 hover:bg-slate-800/50">
                 <div className="flex items-center gap-3 mb-4">
                   <Database className="h-6 w-6 text-teal-400"/>
-                  <h3 className="font-semibold text-slate-200">Data & CMS</h3>
+                  <h3 className="font-semibold text-slate-200">Data & Ecosystème</h3>
                 </div>
                 <ul className="list-disc list-inside text-sm text-slate-400 space-y-2">
-                  <li>SQL (MySQL, PostgreSQL, MariaDB)</li>
-                  <li>NoSQL (MongoDB, Redis) & BigQuery</li>
-                  <li>WordPress / Prestashop</li>
-                  <li>SaaS (Stripe, Brevo, Zendesk...)</li>
+                  <li>SQL (MySQL, MariaDB, PostgreSQL, SQLite)</li>
+                  <li>NoSQL (MongoDB, Redis), BigQuery</li>
+                  <li>WordPress, Prestashop</li>
+                  <li>SaaS (Stripe, Brevo, Atlassian, Sentry...)</li>
                 </ul>
               </div>
 
@@ -291,30 +292,14 @@ export default function Home() {
               <div className="rounded-md border border-slate-800 bg-slate-900/50 p-6 transition hover:border-teal-500/50 hover:bg-slate-800/50">
                 <div className="flex items-center gap-3 mb-4">
                   <Wrench className="h-6 w-6 text-teal-400"/>
-                  <h3 className="font-semibold text-slate-200">Outils & DevOps</h3>
+                  <h3 className="font-semibold text-slate-200">Outils, Qualité & DevOps</h3>
                 </div>
                 <ul className="list-disc list-inside text-sm text-slate-400 space-y-2">
-                  <li>Git / GitHub / GitLab</li>
-                  <li>CI/CD / Postman</li>
-                  <li>Jira / Confluence / ...</li>
-                  <li>Linux / Nginx / ...</li>
+                  <li>Git, GitHub, GitLab, CI/CD</li>
+                  <li>Postman, JetBrains, Datadog</li>
+                  <li>Qualité : PHPStan, ESLint, Prettier, CodeSniffer</li>
+                  <li>Dossiers CIR/CII, Auth. email</li>
                 </ul>
-              </div>
-
-              {/* Card 5 */}
-              <div className="rounded-md border border-slate-800 bg-slate-900/50 p-6 transition hover:border-teal-500/50 hover:bg-slate-800/50 col-span-1 md:col-span-2">
-                <div className="flex items-center gap-3 mb-4">
-                  <ShieldCheck className="h-6 w-6 text-teal-400"/>
-                  <h3 className="font-semibold text-slate-200">Qualité & Sécurité</h3>
-                </div>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <ul className="list-disc list-inside text-sm text-slate-400 space-y-2">
-                    <li>Code Review (PHPStan, ESLint)</li>
-                    <li>Gestion post-piratage</li>
-                    <li>Contribution dossiers CIR/CII</li>
-                    <li>Télétravail & Management</li>
-                  </ul>
-                </div>
               </div>
             </div>
           </section>
@@ -336,7 +321,18 @@ export default function Home() {
       </section>
 
       <footer className="text-sm text-center text-slate-500">
-        <p>Built with <span className="text-slate-200">Next.js</span> and <span className="text-slate-200">Tailwind CSS</span></p>
+        <p>
+          Built with <span className="text-slate-200">Next.js</span> and <span className="text-slate-200">Tailwind CSS</span>
+          <span className="mx-2">•</span>
+          <Link
+            href="https://github.com/brei0x/brei0x.github.io"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-teal-300 transition-colors underline decoration-transparent hover:decoration-teal-300 underline-offset-4"
+          >
+            Source code available on GitHub
+          </Link>
+        </p>
       </footer>
 
       {/* Quick Navigation - Mobile */}
