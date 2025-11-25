@@ -4,6 +4,7 @@ export const size = {
   width: 32,
   height: 32,
 }
+
 export const contentType = 'image/png'
 
 // GitHub Pages does not support server-side generation at runtime
