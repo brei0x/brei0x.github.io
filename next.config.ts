@@ -1,10 +1,9 @@
 import type {NextConfig} from "next";
 
 const nextConfig: NextConfig = {
+  // Configure for static export to GitHub Pages, which disables server-side image optimization
   output: 'export',
-  images: {
-    unoptimized: true, // GitHub Pages does not support Next.js default server-side image optimization
-  },
+  images: {unoptimized: true},
 };
 
 export default nextConfig;
