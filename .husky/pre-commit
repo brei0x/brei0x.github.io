@@ -1,0 +1,2 @@
+# Checks linting and TypeScript type checking before commit
+yarn lint-staged
