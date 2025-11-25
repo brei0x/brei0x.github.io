@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0f172a; /* Slate 900 - Very dark background */
+  --color-surface: #1e293b;    /* Slate 800 - For cards/panels */
+  --color-surface-hover: #334155; /* Slate 700 - Hover state */
+  --color-primary: #3b82f6;    /* Blue 500 - Main action color */
+  --color-primary-hover: #2563eb; /* Blue 600 */
+  --color-text-main: #f1f5f9;  /* Slate 100 - Primary text */
+  --color-text-muted: #94a3b8; /* Slate 400 - Secondary text */
+  --color-border: #334155;     /* Slate 700 - Subtle borders */
+}

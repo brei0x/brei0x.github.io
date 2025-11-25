@@ -33,6 +33,9 @@ export default function Icon() {
     // Options ImageResponse
     {
       ...size,
+      headers: {
+        'Content-Type': contentType,
+      },
     }
   )
 }

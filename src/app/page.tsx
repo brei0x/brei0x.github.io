@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {Github, Linkedin, Server, Code2, Database, Wrench, ArrowUpRight} from "lucide-react";
-import MouseSpotlight from "@/components/MouseSpotlight";
-import MobileNav from "@/components/MobileNav";
+import MouseSpotlight from "@/components/ui/MouseSpotlight";
+import MobileNav from "@/components/ui/MobileNav";
 
 export default function Home() {
   return (
