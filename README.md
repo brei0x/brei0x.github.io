@@ -49,22 +49,26 @@ Ensure you have the following installed:
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/brei0x/brei0x.github.io.git
    cd brei0x.github.io
    ```
 
 2. **Enabled Corepack**
+
    ```bash
    corepack enable
    ```
 
 3. **Install dependencies**
+
    ```bash
    yarn install
    ```
 
 4. **Run the development server**
+
    ```bash
    yarn dev
    ```
@@ -79,6 +83,10 @@ Ensure you have the following installed:
 - `yarn build`: Builds the application for production.
 - `yarn start`: Runs the built application in production mode.
 - `yarn lint`: Runs ESLint to catch code errors.
+
+### Formatting
+
+- `npx sort-package-json`: Sorts `package.json` dependencies.
 
 ## 📄 License
 

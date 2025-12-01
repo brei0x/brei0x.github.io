@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/prettierrc",
-  "semi": true,
+  "semi": false,
   "singleQuote": true,
   "tabWidth": 2,
   "useTabs": false,
@@ -9,20 +9,9 @@
   "bracketSameLine": false,
   "arrowParens": "always",
   "endOfLine": "lf",
-  "printWidth": 1000,
-  "plugins": [
-    "@ianvs/prettier-plugin-sort-imports",
-    "prettier-plugin-tailwindcss"
-  ],
-  "importOrder": [
-    "^react$",
-    "^next(/.*)?$",
-    "",
-    "<THIRD_PARTY_MODULES>",
-    "",
-    "^@/(.*)$",
-    "^[./]"
-  ],
+  "printWidth": 200,
+  "plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  "importOrder": ["^react$", "^next(/.*)?$", "", "<THIRD_PARTY_MODULES>", "", "^@/(.*)$", "^[./]"],
   "importOrderTypeScriptVersion": "5.9.0",
   "tailwindFunctions": ["clsx", "cn", "cva"]
 }
