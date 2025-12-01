@@ -22,9 +22,9 @@ export default function MobileNav() {
           ].map((link) => (
             <a
               key={link.href}
+              className="rounded-full border border-slate-700 bg-slate-800/90 px-6 py-3 text-sm font-bold tracking-widest text-slate-200 uppercase shadow-xl backdrop-blur transition hover:bg-teal-500 hover:text-slate-900"
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="rounded-full border border-slate-700 bg-slate-800/90 px-6 py-3 text-sm font-bold tracking-widest text-slate-200 uppercase shadow-xl backdrop-blur transition hover:bg-teal-500 hover:text-slate-900"
             >
               {link.label}
             </a>
@@ -34,10 +34,10 @@ export default function MobileNav() {
 
       {/* The "Camembert" Toggle Button */}
       <button
-        onClick={toggleMobileMenu}
-        className="fixed right-6 bottom-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-teal-500 text-slate-900 shadow-lg shadow-teal-500/20 transition hover:scale-110 hover:bg-teal-400 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-slate-900 focus:outline-none"
-        aria-label="Menu de navigation mobile"
         aria-expanded={isMobileMenuOpen}
+        aria-label="Menu de navigation mobile"
+        className="fixed right-6 bottom-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-teal-500 text-slate-900 shadow-lg shadow-teal-500/20 transition hover:scale-110 hover:bg-teal-400 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-slate-900 focus:outline-none"
+        onClick={toggleMobileMenu}
       >
         {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
       </button>

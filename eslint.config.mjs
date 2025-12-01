@@ -8,6 +8,15 @@ const eslintConfig = defineConfig([
   {
     rules: {
       'react/no-unescaped-entities': 'off',
+      'react/jsx-sort-props': [
+        'warn',
+        {
+          callbacksLast: true,
+          shorthandFirst: true,
+          ignoreCase: true,
+          reservedFirst: true,
+        },
+      ],
     },
   },
   // Override default ignores of eslint-config-next.

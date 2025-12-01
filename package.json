@@ -22,6 +22,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "lint-staged": "lint-staged",
     "start": "next start",
     "test": "jest",

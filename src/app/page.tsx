@@ -17,7 +17,7 @@ export default function Home() {
             <p className="mt-4 max-w-xs leading-normal text-slate-400">J'aligne développement et architecture cloud sur vos enjeux business.</p>
 
             {/* Quick Navigation */}
-            <nav className="nav hidden lg:block" aria-label="Navigation rapide">
+            <nav aria-label="Navigation rapide" className="nav hidden lg:block">
               <ul className="mt-16 w-max">
                 <li>
                   <a className="group active flex items-center py-3" href="#about">
@@ -48,14 +48,14 @@ export default function Home() {
           </div>
 
           {/* Social Links */}
-          <ul className="mt-8 ml-1 flex items-center" aria-label="Réseaux sociaux">
+          <ul aria-label="Réseaux sociaux" className="mt-8 ml-1 flex items-center">
             <li className="mr-5 text-xs">
-              <Link href="https://github.com/brei0x" target="_blank" rel="noreferrer" className="block hover:text-slate-200" aria-label="GitHub">
+              <Link aria-label="GitHub" className="block hover:text-slate-200" href="https://github.com/brei0x" rel="noreferrer noopener" target="_blank">
                 <Github className="h-6 w-6" />
               </Link>
             </li>
             <li className="mr-5 text-xs">
-              <Link href="https://www.linkedin.com/in/breithbarbot" target="_blank" rel="noreferrer" className="block hover:text-slate-200" aria-label="LinkedIn">
+              <Link aria-label="LinkedIn" className="block hover:text-slate-200" href="https://www.linkedin.com/in/breithbarbot" rel="noreferrer noopener" target="_blank">
                 <Linkedin className="h-6 w-6" />
               </Link>
             </li>
@@ -64,7 +64,7 @@ export default function Home() {
 
         {/* Right Section: Scrollable Content */}
         <div className="pt-24 lg:w-1/2 lg:py-24">
-          <section id="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="À propos">
+          <section aria-label="À propos" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" id="about">
             <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-950/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
               <h2 className="text-sm font-bold tracking-widest text-slate-200 uppercase lg:sr-only">À propos</h2>
             </div>
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="experience" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Expérience Professionnelle">
+          <section aria-label="Expérience Professionnelle" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" id="experience">
             <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-950/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
               <h2 className="text-sm font-bold tracking-widest text-slate-200 uppercase lg:sr-only">Expérience</h2>
             </div>
@@ -98,7 +98,7 @@ export default function Home() {
               {/* Job 4 */}
               <li className="mb-12">
                 <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:group-hover/list:opacity-50 lg:hover:!opacity-100">
-                  <header className="z-10 mt-1 mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase sm:col-span-2" aria-label="2018 à aujourd'hui">
+                  <header aria-label="2018 à aujourd'hui" className="z-10 mt-1 mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase sm:col-span-2">
                     Juil. 2018 - Présent
                   </header>
                   <div className="z-10 sm:col-span-6">
@@ -114,7 +114,7 @@ export default function Home() {
                       Développement d'une plateforme de mise en relation dédiée au secteur animalier. Gestion complète du pôle technique : choix architecturaux, management d'équipe agile, et
                       administration système. En tant que DPO, j'assure la sécurité des données et l'analyse des risques.
                     </p>
-                    <ul className="relative mt-2 flex flex-wrap" aria-label="Technologies utilisées">
+                    <ul aria-label="Technologies utilisées" className="relative mt-2 flex flex-wrap">
                       <li className="mt-2 mr-1.5">
                         <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs leading-5 font-medium text-teal-300">Lead Full Stack</div>
                       </li>
@@ -138,7 +138,7 @@ export default function Home() {
               {/* Job 3 */}
               <li className="mb-12">
                 <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:group-hover/list:opacity-50 lg:hover:!opacity-100">
-                  <header className="z-10 mt-1 mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase sm:col-span-2" aria-label="2020 à 2021">
+                  <header aria-label="2020 à 2021" className="z-10 mt-1 mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase sm:col-span-2">
                     Oct. 2020 - Mai 2021
                   </header>
                   <div className="z-10 sm:col-span-6">
@@ -157,7 +157,7 @@ export default function Home() {
                         <li>Administration système et réseau</li>
                       </ul>
                     </div>
-                    <ul className="relative mt-2 flex flex-wrap" aria-label="Technologies utilisées">
+                    <ul aria-label="Technologies utilisées" className="relative mt-2 flex flex-wrap">
                       <li className="mt-2 mr-1.5">
                         <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs leading-5 font-medium text-teal-300">E-commerce</div>
                       </li>
@@ -175,7 +175,7 @@ export default function Home() {
               {/* Job 2 */}
               <li className="mb-12">
                 <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:group-hover/list:opacity-50 lg:hover:!opacity-100">
-                  <header className="z-10 mt-1 mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase sm:col-span-2" aria-label="2014 à 2018">
+                  <header aria-label="2014 à 2018" className="z-10 mt-1 mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase sm:col-span-2">
                     Avril 2014 - Juin 2018
                   </header>
                   <div className="z-10 sm:col-span-6">
@@ -194,7 +194,7 @@ export default function Home() {
                         <li>Support technique (informatique et réseau)</li>
                       </ul>
                     </div>
-                    <ul className="relative mt-2 flex flex-wrap" aria-label="Technologies utilisées">
+                    <ul aria-label="Technologies utilisées" className="relative mt-2 flex flex-wrap">
                       <li className="mt-2 mr-1.5">
                         <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs leading-5 font-medium text-teal-300">Full Stack</div>
                       </li>
@@ -212,7 +212,7 @@ export default function Home() {
               {/* Job 1 - Internships */}
               <li className="mb-12">
                 <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:group-hover/list:opacity-50 lg:hover:!opacity-100">
-                  <header className="z-10 mt-1 mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase sm:col-span-2" aria-label="2011 à 2013">
+                  <header aria-label="2011 à 2013" className="z-10 mt-1 mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase sm:col-span-2">
                     2011 - 2013
                   </header>
                   <div className="z-10 sm:col-span-6">
@@ -239,17 +239,17 @@ export default function Home() {
 
             <div className="mt-12 text-right">
               <Link
-                href="/cv_breith_barbot.pdf"
-                target="_blank"
-                rel="noopener"
                 className="group inline-flex items-center leading-tight font-semibold text-slate-200 transition-colors hover:text-teal-300"
+                href="/cv_breith_barbot.pdf"
+                rel="noreferrer noopener"
+                target="_blank"
               >
                 Voir le CV complet <ArrowUpRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </Link>
             </div>
           </section>
 
-          <section id="skills" className="mb-16 scroll-mt-16 md:mb-0 lg:scroll-mt-24" aria-label="Compétences Techniques">
+          <section aria-label="Compétences Techniques" className="mb-16 scroll-mt-16 md:mb-0 lg:scroll-mt-24" id="skills">
             <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-950/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
               <h2 className="text-sm font-bold tracking-widest text-slate-200 uppercase lg:sr-only">Compétences</h2>
             </div>
@@ -315,15 +315,16 @@ export default function Home() {
         </div>
       </div>
 
-      <section id="contact" className="mt-16 mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Contact">
+      <section aria-label="Contact" className="mt-16 mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" id="contact">
         <div className="rounded-2xl border border-slate-800 bg-gradient-to-br from-teal-900/20 to-slate-900 p-8 text-center md:p-12">
           <h3 className="mb-6 text-2xl font-semibold text-slate-100 md:text-3xl">Prêt à collaborer ?</h3>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-400">
             Je suis toujours ouvert aux discussions sur l'innovation technologique et les défis architecturaux. N'hésitez pas à me contacter pour discuter de votre projet.
           </p>
           <Link
-            href="https://www.linkedin.com/in/breithbarbot"
             className="inline-flex items-center justify-center rounded-md bg-teal-500 px-8 py-4 text-lg font-medium text-slate-950 transition hover:bg-teal-400 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-slate-900 focus:outline-none"
+            href="https://www.linkedin.com/in/breithbarbot"
+            rel="noreferrer noopener"
             target="_blank"
             title="Contactez-moi sur LinkedIn"
           >
@@ -337,10 +338,10 @@ export default function Home() {
           Built with <span className="text-slate-200">Next.js</span> and <span className="text-slate-200">Tailwind CSS</span>
           <span className="mx-2">•</span>
           <Link
-            href="https://github.com/brei0x/brei0x.github.io"
-            target="_blank"
-            rel="noreferrer"
             className="underline decoration-transparent underline-offset-4 transition-colors hover:text-teal-300 hover:decoration-teal-300"
+            href="https://github.com/brei0x/brei0x.github.io"
+            rel="noreferrer noopener"
+            target="_blank"
           >
             Source code available on GitHub
           </Link>
