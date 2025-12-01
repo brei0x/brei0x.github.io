@@ -1,31 +1,41 @@
 {
   "name": "brei0x.github.io",
-  "version": "1.1.1",
-  "description": "",
+  "version": "1.0.0",
   "private": true,
+  "description": "",
+  "homepage": "https://brei0x.github.io",
+  "bugs": {
+    "url": "https://github.com/brei0x/brei0x.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brei0x/brei0x.github.io.git"
+  },
   "license": "MIT",
   "author": {
     "name": "Brei0x",
     "url": "https://github.com/brei0x"
   },
-  "homepage": "https://brei0x.github.io",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/brei0x/brei0x.github.io.git"
-  },
-  "bugs": {
-    "url": "https://github.com/brei0x/brei0x.github.io/issues"
-  },
-  "engines": {
-    "node": ">=24.0.0"
-  },
-  "packageManager": "yarn@4.12.0",
   "scripts": {
-    "dev": "next dev --experimental-https",
     "build": "next build",
-    "start": "next start",
+    "dev": "next dev --experimental-https",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "eslint",
-    "prepare": "husky"
+    "lint-staged": "lint-staged",
+    "start": "next start",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "bash -c 'tsc --noEmit'",
+      "prettier --write"
+    ],
+    "src/**/*.{json,css,md,html}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "lucide-react": "^0.554.0",
@@ -34,21 +44,27 @@
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
     "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
     "husky": "^9.1.7",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
     "lint-staged": "^16.2.7",
+    "prettier": "3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "bash -c 'tsc --noEmit'"
-    ]
+  "packageManager": "yarn@4.12.0",
+  "engines": {
+    "node": ">=24.0.0"
   }
 }

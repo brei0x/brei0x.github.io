@@ -1,27 +1,17 @@
 # EditorConfig is awesome: https://editorconfig.org
 
-# top-most EditorConfig file
+# Root configuration file
 root = true
 
-# Unix-style newlines
+# Default rules for all files
 [*]
 charset = utf-8
 end_of_line = lf
+indent_style = space
+indent_size = 2
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-# Standard indentation for all files
-[*.*]
-indent_style = space
-indent_size = 2
-
+# PHP, HTML and Twig files use 4-space indentation
 [*.{php,html,twig}]
 indent_size = 4
-
-# Limit line length for Markdown files
-[*.md]
-max_line_length = 80
-
-# Disable line length limit for git commit messages
-[COMMIT_EDITMSG]
-max_line_length = 0

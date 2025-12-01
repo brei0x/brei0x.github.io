@@ -1,1 +1,2 @@
-yarn run build
+# Run tests before pushing
+yarn test

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+.yarn
+
+# Build outputs
+.next
+out
+dist
+build
+
+# Generated files
+*.lock
+yarn.lock
+package-lock.json
+
+# Cache
+.cache
+*.tsbuildinfo
+
+# Other
+coverage
+public
